@@ -131,6 +131,10 @@ public interface ClanAPI {
 
 	void check_actions(ClanActions action, UUID clanid);
 
+	List<ClanData> getRivalries(UUID clanUUID);
+
+	List<ClanData> getAlliances(UUID clanUUID);
+
 	
 
 

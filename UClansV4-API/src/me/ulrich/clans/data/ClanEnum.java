@@ -14,6 +14,10 @@ public class ClanEnum {
 		REGROUP, INVITE, CHAT, ALLY, RIVAL, CUSTOM;
 	}
 	
+	public enum MemberRoles{
+		MEMBER, MODERATOR, LEADER;
+	}
+	
 	public enum ImportPlugins{
 		ADVANCEDCLANS;
 	}

@@ -10,6 +10,7 @@ import me.ulrich.clans.data.ClanData;
 import me.ulrich.clans.data.Invites;
 import me.ulrich.clans.data.PlayerData;
 import me.ulrich.clans.data.ClanEnum.InviteResponse;
+import me.ulrich.clans.data.ClanEnum.MemberRoles;
 import me.ulrich.clans.packets.interfaces.PlayerAPI;
 
 public class PlayerAPIManager implements PlayerAPI {
@@ -112,5 +113,11 @@ public class PlayerAPIManager implements PlayerAPI {
 	
 	@Override
 	public synchronized void savePlayerData(PlayerData player) {}
+
+
+	@Override
+	public MemberRoles getEnumPlayerRole(UUID playerUUID) {
+		return null;
+	}
 	
 }

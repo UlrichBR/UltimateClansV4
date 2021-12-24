@@ -294,6 +294,16 @@ public class ClanAPIManager implements ClanAPI {
 		return false;
 	}
 
+	@Override
+	public List<ClanData> getRivalries(UUID clanUUID) {
+		return null;
+	}
+
+	@Override
+	public List<ClanData> getAlliances(UUID clanUUID) {
+		return null;
+	}
+
 
 	
 }

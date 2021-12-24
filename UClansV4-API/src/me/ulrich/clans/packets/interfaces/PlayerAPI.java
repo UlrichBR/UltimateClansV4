@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 
 import me.ulrich.clans.data.ClanData;
 import me.ulrich.clans.data.ClanEnum.InviteResponse;
+import me.ulrich.clans.data.ClanEnum.MemberRoles;
 import me.ulrich.clans.data.Invites;
 import me.ulrich.clans.data.PlayerData;
 
@@ -27,6 +28,8 @@ public interface PlayerAPI {
 	PlayerData getPlayerData(String player);
 
 	String getPlayerRole(UUID playerUUID);
+
+	MemberRoles getEnumPlayerRole(UUID playerUUID);
 
 	boolean isLockedChat(Player player);
 
