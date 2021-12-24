@@ -63,4 +63,8 @@ permissions:
       uclans.player.members: true
       uclans.player.settings: true
       uclans.player.regroup: true
+<<<<<<< HEAD
       uclans.player.banner: true
+=======
+      uclans.player.banner: true
+>>>>>>> branch 'main' of https://github.com/UlrichBR/UltimateClansV4
