@@ -4,4 +4,63 @@ version: 1.0
 author: UlrichBR
 website: https://www.spigotmc.org/resources/authors/543977/
 description: The best and most complete system of clans and lands.
-api-version: 1.13
+api-version: 1.13softdepend: [Vault, PlaceholderAPI, PrototolLib, WorldGuard, WorldEdit, CombatLogX, PlayerPoints, DeluxeCombat, PvPManager, floodgate, Duels, EconomyPlus]
+commands:
+   uclan:
+      description: Open the help staff menu.
+      usage: /<command>
+      aliases: [uclans, uc, ugang, ug, uteam]
+   clan:
+      description: Open the help player menu.
+      usage: /<command>
+      aliases: [clans, c, gang, team]
+permissions:
+  uclans.admin.*:
+    children: 
+      uclans.admin.help: true
+      uclans.admin.addpoints: true
+      uclans.admin.setpoints: true
+      uclans.admin.removepoints: true
+      uclans.admin.resetplayerkdr: true
+      uclans.admin.resetclankdr: true
+      uclans.admin.globalff: true
+      uclans.admin.delete: true
+      uclans.admin.forcejoin: true
+      uclans.admin.verify: true
+      uclans.admin.reload: true
+      uclans.admin.reloadaddons: true
+      uclans.admin.chatspy: true
+  uclans.player.*:
+    children: 
+      uclans.player.help: true
+      uclans.player.war: true
+	  uclans.player.chest: true
+	  uclans.player.quest: true
+	  uclans.player.nexus: true
+	  uclans.player.bank: true
+      uclans.player.create: true
+      uclans.player.changeleader: true
+      uclans.player.desc: true
+      uclans.player.disband: true
+      uclans.player.leave: true
+      uclans.player.invite: true
+      uclans.player.join: true
+      uclans.player.deny: true
+      uclans.player.kick: true
+      uclans.player.promote: true
+      uclans.player.demote: true
+      uclans.player.home: true
+      uclans.player.chat: true
+      uclans.player.ff: true
+      uclans.player.modtag: true
+      uclans.player.list: true
+      uclans.player.info: true
+      uclans.player.profile: true
+      uclans.player.rival: true
+      uclans.player.rivalries: true
+      uclans.player.ally: true
+      uclans.player.alliances: true
+      uclans.player.members: true
+      uclans.player.settings: true
+      uclans.player.regroup: true
+      uclans.player.banner: true
