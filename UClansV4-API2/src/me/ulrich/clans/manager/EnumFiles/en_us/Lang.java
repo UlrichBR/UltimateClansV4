@@ -1,12 +1,10 @@
 package me.ulrich.clans.manager.EnumFiles.en_us;
 
 import java.util.Arrays;
-
 import me.ulrich.clans.packets.methods.enums.interfaces.ConfigurationEnum;
 
-
 public enum Lang implements ConfigurationEnum  {
-	
+
 	LANGUAGE("LANGUAGE", " ", " ", " ", " # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES", " "),
 	
 	TAG("LANGUAGE.tag", "&6&lU&9&lClans &r&7|"),
@@ -297,6 +295,8 @@ public enum Lang implements ConfigurationEnum  {
 	Home_clan_delhome_confirm_title("GUI.Home clan_delhome_confirm title", "&c&lConfirm delhome &4&l%home_name% &c?"),
 	Home_clan_delhome_confirm_items_fill_name("GUI.Home clan_delhome_confirm items fill name", " "),
 	Home_clan_delhome_confirm_items_fill_lore("GUI.Home clan_delhome_confirm items fill lore", Arrays.asList()),
+	Home_clan_delhome_confirm_items_confirm_name("GUI.Home clan_delhome_confirm items confirm name", "&aClick to confirm"),
+
 	Home_clan_delhome_confirm_items_confirm_lore("GUI.Home clan_delhome_confirm items confirm lore", Arrays.asList(" ", " &eClick to go confirm.")),
 	Home_clan_delhome_confirm_items_cancel_name("GUI.Home clan_delhome_confirm items cancel name", "&aClick to cancel"),
 	Home_clan_delhome_confirm_items_cancel_lore("GUI.Home clan_delhome_confirm items cancel lore", Arrays.asList(" ", " &eClick to go cancel.")),
@@ -859,7 +859,7 @@ public enum Lang implements ConfigurationEnum  {
 	COMMANDS_uclan_reloadaddons_show_on_success("COMMANDS.uclan reloadaddons show on_success", "%tag% &aAddons successfully reloaded! &7(%time%)."),
 	COMMANDS_uclan_reloadaddons_show_on_error("COMMANDS.uclan reloadaddons show on_error", "%tag% &cError reloading addons."),
 	COMMANDS_uclan_reloadaddons_show_on_usage("COMMANDS.uclan reloadaddons show on_usage", "%tag% &cUse &4/uclan reloadaddons"), 
-
+	
 	;
 	
 	private String path;
